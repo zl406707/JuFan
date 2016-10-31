@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/homepager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="#F1F1F1"
+        >
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            >
+            <RadioButton
+                android:id="@+id/shouye"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="首页"
+                android:layout_marginTop="10dp"
+                android:onClick="shouye"
+                android:checked="true"
+                android:drawableTop="@drawable/shouyeselect"
+                android:textColor="#D83A51"
+                android:textSize="16dp"
+                />
+            <RadioButton
+                android:id="@+id/myzhibo"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:button="@null"
+                android:gravity="center"
+                android:onClick="myzhibo"
+                android:drawableTop="@drawable/homelogin"
+                />
+
+            <RadioButton
+                android:id="@+id/wode"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/wodeselect"
+                android:gravity="center"
+                android:text="我的"
+                android:layout_marginTop="10dp"
+                android:onClick="wode"
+                android:textColor="#D83A51"
+                android:textSize="16dp"
+                />
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

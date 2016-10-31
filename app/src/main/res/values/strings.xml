@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JuFan</string>
+
+    <string name="serverurl">http://169.254.172.144:8080/goods_file/update_file.xml</string>
+</resources>
